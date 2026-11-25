@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MoviCibao: consulta rutas, alternativas de transporte e incidencias en la Región Cibao Norte.">
+    <title>MoviCibao | Transporte inteligente</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="icon" href="assets/images/icono.PNG" type="image/png
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar container">
+           <a href="index.html" class="logo-container">
+    <img src="assets/images/movi.jpg" alt="Logo MoviCibao" class="logo-img">
+    <span>MoviCibao</span>
+</a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#rutas">Consultar rutas</a></li>
+                <li><a href="#incidencias">Incidencias</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+
+            <a href="#rutas" class="nav-button">Comenzar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+
+                <span class="hero-label">
+                    TRANSPORTE INTELIGENTE · CIBAO NORTE
+                </span>
+
+                <h1>
+                    Tu ruta cambia.<br>
+                    <span>Tu planificación también.</span>
+                </h1>
+
+                <p>
+                    Descubre mejores alternativas de transporte,
+                    consulta rutas y mantente informado sobre las
+                    condiciones del camino.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#rutas" class="btn btn-primary">
+                        Consultar rutas
+                    </a>
+
+                    <a href="#incidencias" class="btn btn-secondary">
+                        Ver incidencias
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="routes-section container" id="rutas">
+            <div class="section-heading">
+                <span>PLANIFICA TU VIAJE</span>
+                <h2>¿A dónde necesitas ir?</h2>
+                <p>Encuentra alternativas para tu próximo desplazamiento.</p>
+            </div>
+
+            <div class="route-search">
+                <div class="form-group">
+                    <label for="origen">Punto de partida</label>
+                    <input
+                        type="text"
+                        id="origen"
+                        placeholder="Ej. Tamboril"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="destino">Destino</label>
+                    <input
+                        type="text"
+                        id="destino"
+                        placeholder="Ej. Santiago"
+                    >
+                </div>
+
+                <button class="btn btn-primary" id="buscarRuta">
+                    Buscar ruta
+                </button>
+            </div>
+
+            <div id="resultadoRuta" class="route-result"></div>
+        </section>
+
+       
+<section class="incidents-section" id="incidencias">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>COMUNIDAD MOVICIBAO</span>
+            <h2>Reporta una incidencia</h2>
+            <p>
+                Ayuda a otros usuarios compartiendo información
+                sobre lo que sucede en las vías.
+            </p>
+        </div>
+
+        <div class="report-container">
+
+            <form id="formReporte" class="report-form">
+
+                <div class="form-group">
+                    <label for="tipoIncidencia">
+                        Tipo de incidencia
+                    </label>
+
+                    <select id="tipoIncidencia" required>
+                        <option value="">Selecciona una categoría</option>
+                        <option value="Congestión vehicular">
+                            🚗 Congestión vehicular
+                        </option>
+                        <option value="Lluvias fuertes">
+                            🌧️ Lluvias fuertes
+                        </option>
+                        <option value="Accidente u obstáculo">
+                            🚧 Accidente u obstáculo
+                        </option>
+                        <option value="Interrupción del transporte">
+                            🚌 Interrupción del transporte
+                        </option>
+                        <option value="Otro">
+                            ⚠️ Otro
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ubicacionIncidencia">
+                        Ubicación
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ubicacionIncidencia"
+                        placeholder="Ej. Carretera Tamboril - Santiago"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcionIncidencia">
+                        Descripción del problema
+                    </label>
+
+                    <textarea
+                        id="descripcionIncidencia"
+                        placeholder="Describe lo que está sucediendo..."
+                        maxlength="500"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Publicar reporte
+                </button>
+
+                <p id="mensajeReporte" role="status"></p>
+
+            </form>
+
+            <div class="reports-list">
+                <h3>Reportes de la comunidad</h3>
+
+                <div id="listaReportes">
+                    <p class="empty-reports">
+                        Todavía no hay reportes publicados.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+        <section class="about-section container" id="nosotros">
+            <span>ACERCA DE MOVICIBAO</span>
+            <h2>Movilidad más informada para todos.</h2>
+            <p>
+                Una iniciativa digital orientada a facilitar la
+                planificación de desplazamientos en la Región Cibao Norte.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 MoviCibao. Proyecto académico.</p>
+            <p>Región Cibao Norte, República Dominicana.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
