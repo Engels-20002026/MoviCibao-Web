@@ -1,0 +1,423 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 100%;
+}
+
+
+/* NAVEGACIÓN */
+
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 18px 5%;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #0f172a;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.brand-icon {
+  background-color: #0d9488;
+  color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #475569;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #0d9488;
+}
+
+.login-button {
+  background-color: #0d9488;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0f766e;
+}
+
+
+/* SECCIÓN PRINCIPAL */
+
+.hero {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #ecfdf5, #f0fdfa, #ffffff);
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-tag {
+  display: inline-block;
+  color: #0d9488;
+  background-color: #ccfbf1;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 58px);
+  line-height: 1.15;
+  color: #0f172a;
+  margin-bottom: 22px;
+}
+
+.hero h1 span {
+  color: #0d9488;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-button {
+  background-color: #0d9488;
+  color: white;
+  border: 1px solid #0d9488;
+}
+
+.primary-button:hover {
+  background-color: #0f766e;
+}
+
+.secondary-button {
+  background-color: white;
+  color: #0f766e;
+  border: 1px solid #99f6e4;
+}
+
+.secondary-button:hover {
+  background-color: #f0fdfa;
+}
+
+
+/* SECCIÓN DE REPORTES */
+
+.reportes-section {
+  padding: 80px 5%;
+  background-color: #f8fafc;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-tag {
+  color: #0d9488;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.section-heading h2 {
+  font-size: 34px;
+  color: #0f172a;
+  margin: 12px 0;
+}
+
+.section-heading p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.reportes-grid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.reporte-card {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.reporte-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reporte-icon {
+  font-size: 28px;
+}
+
+.estado {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px 11px;
+  border-radius: 20px;
+}
+
+.estado-pendiente {
+  color: #92400e;
+  background-color: #fef3c7;
+}
+
+.estado-en-proceso {
+  color: #1d4ed8;
+  background-color: #dbeafe;
+}
+
+.estado-resuelto {
+  color: #166534;
+  background-color: #dcfce7;
+}
+
+.reporte-card h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.reporte-ubicacion {
+  color: #0d9488;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.reporte-descripcion {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 65px;
+}
+
+.details-button {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: #0d9488;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 850px) {
+  .reportes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .reportes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* FORMULARIO DE REPORTES */
+
+.formulario-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.reporte-form {
+  max-width: 650px;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.reporte-form label {
+  font-weight: bold;
+  color: #334155;
+  margin-top: 8px;
+}
+
+.reporte-form input,
+.reporte-form select,
+.reporte-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  background-color: white;
+}
+
+.reporte-form input:focus,
+.reporte-form select:focus,
+.reporte-form textarea:focus {
+  outline: 2px solid #0d9488;
+  border-color: #0d9488;
+}
+
+.reporte-form textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+
+/* ENLACES CON APARIENCIA DE BOTÓN */
+
+.hero-buttons a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 25px;
+}
+
+
+/* GEOLOCALIZACIÓN */
+
+.location-button {
+  width: fit-content;
+  padding: 12px 16px;
+  border: 1px solid #0d9488;
+  border-radius: 8px;
+  background-color: #f0fdfa;
+  color: #0f766e;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.location-button:hover {
+  background-color: #ccfbf1;
+}
+
+.location-message {
+  color: #0f766e;
+  font-size: 14px;
+}
+
+.coordinates {
+  padding: 12px;
+  background-color: #ecfdf5;
+  border: 1px solid #99f6e4;
+  border-radius: 8px;
+  color: #115e59;
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+
+
+/* MAPA DE MOVICIBAO */
+
+.mapa-section {
+  padding: 80px 5%;
+  background-color: #f8fafc;
+}
+
+.mapa-container {
+  max-width: 1150px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.mapa {
+  width: 100%;
+  height: 450px;
+}
+
+
+.mapa-contador {
+  max-width: 1150px;
+  margin: 15px auto 0;
+  color: #64748b;
+  font-size: 14px;
+  text-align: right;
+}
+
+
+
+
