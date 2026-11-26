@@ -567,5 +567,14 @@ input {
     }
 }
 
+.hero-description {
+    max-width: 650px;
+    margin: 15px auto;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #64748b;
+    text-align: center;
+}
+
 
 
