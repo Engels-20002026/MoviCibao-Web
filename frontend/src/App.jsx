@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import Reportes from './components/Reportes';
 import FormularioReporte from './components/FormularioReporte';
 import Mapa from './components/Mapa';
+import Footer from './components/Footer';
 
 function App() {
   const [reportes, setReportes] = useState(() => {
@@ -72,6 +73,13 @@ function App() {
 
         <Mapa reportes={reportes} />
       </main>
+  <footer class="footer">
+        <div class="container">
+            <p>© 2026 MoviCibao. Proyecto académico.</p>
+            <p>Región Cibao Norte, República Dominicana.</p>
+        </div>
+    </footer>
+      
     </div>
   );
 }
